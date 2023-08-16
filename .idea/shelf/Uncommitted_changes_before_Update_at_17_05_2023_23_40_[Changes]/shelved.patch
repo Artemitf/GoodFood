@@ -1,0 +1,19 @@
+Index: app/src/main/java/com/example/afinal/MainActivity.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.example.afinal;\r\n\r\nimport android.os.Bundle;\r\nimport android.view.MenuItem;\r\nimport android.view.View;\r\nimport android.view.Menu;\r\nimport android.widget.Toast;\r\nimport android.widget.Toolbar;\r\n\r\nimport com.google.android.material.snackbar.Snackbar;\r\nimport com.google.android.material.navigation.NavigationView;\r\n\r\nimport androidx.annotation.NonNull;\r\nimport androidx.appcompat.app.ActionBarDrawerToggle;\r\nimport androidx.core.view.GravityCompat;\r\nimport androidx.drawerlayout.widget.DrawerLayout;\r\nimport androidx.appcompat.app.AppCompatActivity;\r\n\r\nimport com.example.afinal.databinding.ActivityMainBinding;\r\n\r\npublic class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener{\r\n\r\n    private ActivityMainBinding binding;\r\n    private DrawerLayout drawer;\r\n\r\n    @Override\r\n    protected void onCreate(Bundle savedInstanceState) {\r\n        super.onCreate(savedInstanceState);\r\n        setContentView(R.layout.activity_main);\r\n        binding = ActivityMainBinding.inflate(getLayoutInflater());\r\n        setContentView(binding.getRoot());\r\n\r\n        drawer = binding.drawerLayout;\r\n\r\n        NavigationView navigationView = binding.navView;\r\n        navigationView.setNavigationItemSelectedListener(this);\r\n        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawer, R.string.navigation_drawer_open, R.string.navigation_drawer_close);\r\n        drawer.addDrawerListener(toggle);\r\n        toggle.syncState();\r\n        // Passing each menu ID as a set of Ids because each\r\n        // menu should be considered as top level destinations.\r\n    }\r\n\r\n    @Override\r\n    public boolean onCreateOptionsMenu(Menu menu) {\r\n        // Inflate the menu; this adds items to the action bar if it is present.\r\n        getMenuInflater().inflate(R.menu.main, menu);\r\n        return true;\r\n    }\r\n\r\n    @Override\r\n    public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {\r\n        int id = menuItem.getItemId();\r\n        if (id == R.id.nav_home){\r\n            Toast.makeText(this, \"myau tr\", Toast.LENGTH_SHORT).show();\r\n        }\r\n        drawer.closeDrawer(GravityCompat.START);\r\n        return true;\r\n    }\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/example/afinal/MainActivity.java b/app/src/main/java/com/example/afinal/MainActivity.java
+--- a/app/src/main/java/com/example/afinal/MainActivity.java	(revision e20d5fdb9cd9b66145f92f32bb109672c6bc831a)
++++ b/app/src/main/java/com/example/afinal/MainActivity.java	(date 1684337928635)
+@@ -52,7 +52,7 @@
+     public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
+         int id = menuItem.getItemId();
+         if (id == R.id.nav_home){
+-            Toast.makeText(this, "myau tr", Toast.LENGTH_SHORT).show();
++            Toast.makeText(this, "myau tt", Toast.LENGTH_SHORT).show();
+         }
+         drawer.closeDrawer(GravityCompat.START);
+         return true;

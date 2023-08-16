@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.GoodFood.MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:gravity="center_horizontal"
+        android:text="@string/hello_blank_fragment1"
+        android:textColor="#3C849A"
+        android:textSize="20sp"
+        app:drawableTint="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="101dp"
+        android:layout_marginRight="101dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="32dp"
+        android:text="Сброс"
+        app:backgroundTint="#3C849A"
+        app:layout_constraintStart_toEndOf="@+id/button_timer"
+        app:layout_constraintTop_toBottomOf="@+id/timer" />
+
+    <Button
+        android:id="@+id/button_timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="32dp"
+        android:text="Старт"
+        app:backgroundTint="#3C849A"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timer" />
+
+    <TextView
+        android:id="@+id/ves"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="128dp"
+        android:layout_marginLeft="128dp"
+        android:layout_marginTop="30dp"
+        android:text="Ваш вес сейчас:"
+        android:textColor="#3C849A"
+        android:textSize="20sp"
+        app:drawableTint="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/text1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_timer"
+        app:layout_constraintVertical_bias="0.907" />
+
+    <Button
+        android:id="@+id/button_save1"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginLeft="128dp"
+        android:layout_marginTop="392dp"
+        android:text="Сохранить"
+        app:backgroundTint="#3C849A"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/text2"
+        android:inputType="numberDecimal"
+        android:layout_width="192dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="108dp"
+        android:layout_marginLeft="108dp"
+        app:layout_constraintBottom_toTopOf="@+id/button_save2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gel_ves"
+        app:layout_constraintVertical_bias="0.6" />
+
+    <EditText
+        android:id="@+id/text1"
+        android:inputType="numberDecimal"
+        android:layout_width="192dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="108dp"
+        android:layout_marginLeft="108dp"
+        android:layout_marginTop="280dp"
+        app:layout_constraintBottom_toTopOf="@+id/button_save1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/gel_ves"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="132dp"
+        android:layout_marginLeft="132dp"
+        android:layout_marginTop="96dp"
+        android:text="Желаемый вес:"
+        android:textColor="#3C849A"
+        android:textSize="20sp"
+        app:drawableTint="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text1" />
+
+    <Button
+        android:id="@+id/button_save2"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginLeft="128dp"
+        android:layout_marginTop="570dp"
+        android:text="Сохранить"
+        app:backgroundTint="#3C849A"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

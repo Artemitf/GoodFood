@@ -1,0 +1,174 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.GoodFood.BlankFragment4">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="124dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="238dp"
+        android:layout_marginLeft="238dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="0dp"
+        android:paddingTop="@dimen/nav_header_vertical_spacing"
+        app:srcCompat="@drawable/water" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="124dp"
+        android:layout_below="@+id/imageView2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="238dp"
+        android:layout_marginLeft="81dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="167dp"
+        android:paddingTop="@dimen/nav_header_vertical_spacing"
+        app:srcCompat="@drawable/hleb" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="match_parent"
+        android:layout_height="124dp"
+        android:layout_below="@+id/imageView3"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="238dp"
+        android:layout_marginLeft="81dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="167dp"
+        android:paddingTop="@dimen/nav_header_vertical_spacing"
+        app:srcCompat="@drawable/porcii" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="match_parent"
+        android:layout_height="124dp"
+        android:layout_below="@+id/imageView4"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="238dp"
+        android:layout_marginLeft="81dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="167dp"
+        android:paddingTop="@dimen/nav_header_vertical_spacing"
+        app:srcCompat="@drawable/gazirovka" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="match_parent"
+        android:layout_height="124dp"
+        android:layout_below="@+id/imageView5"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="238dp"
+        android:layout_marginLeft="81dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="167dp"
+        android:paddingTop="@dimen/nav_header_vertical_spacing"
+        app:srcCompat="@drawable/son" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="69dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="68dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="180dp"
+        android:layout_marginRight="332dp"
+        android:text="Пейте воду. Питьевая вода может повысить метаболизм на 24–30% в течение 1–1,5 часов, что поможет вам сжечь несколько калорий." />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="69dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView6"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="68dp"
+        android:layout_marginTop="46dp"
+        android:layout_marginEnd="180dp"
+        android:layout_marginRight="332dp"
+        android:text="Ешьте меньше рафинированных углеводов. Исследования показывают, что они могут быстро повышать уровень сахара в крови, что вызывает сильное чувство голода." />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="69dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView7"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="68dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="180dp"
+        android:layout_marginRight="332dp"
+        android:text="Подсчитывайте калории. Некоторые исследования показывают, что ведение дневника питания может помочь вам похудеть." />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="69dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView8"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="68dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="180dp"
+        android:layout_marginRight="332dp"
+        android:text="Не пейте сладкие напитки. Сахар вреден, но сахар в жидком виде еще хуже. Исследования показывают, что сахар в напитках – одна из главных причин ожирения." />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="69dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView9"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="68dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="180dp"
+        android:layout_marginRight="332dp"
+        android:text="Хороший сон. Влияние сна сильно недооценивают, хотя он так же важен, как здоровое питание и физические упражнения. Не вздумайте ложиться спать сразу после еды!  " />
+
+
+</RelativeLayout>
